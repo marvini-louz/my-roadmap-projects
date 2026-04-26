@@ -12,11 +12,11 @@
             <form action="#" method="post" class="flex col form-group">
                 <div class="flex col user-infos">
                     <div class="flex col">
-                        <label for="user-name">Full name</label>
+                        <label for="full-name">Full name</label>
                         <input
                             type="text"
-                            id="user-name"
-                            name="user-name"
+                            id="full-name"
+                            name="full-name"
                             placeholder="What should we call you?"
                             aria-required="true"
                         />
@@ -81,17 +81,18 @@
             </form>
 
             <div class="flex col aside-container">
-                <div class="progress-container">
+                <div class="flex col progress-container">
                     <div class="progress-bar">
                         <div class="progress"></div>
                     </div>
                     <span class="progress-percentage">65%</span>
                 </div>
+                <p class="footer-progress">Profile Completeness</p>
                 <div class="form-footer">
-                    <ul class="checklist">
-                        <li>Create Account</li>
-                        <li>Update Roadmap Progress</li>
-                        <li>Setup Public Profile</li>
+                    <ul class="flex col checklist">
+                        <li class="complete">Create Account</li>
+                        <li class="complete">Update Roadmap Progress</li>
+                        <li class="complete">Setup Public Profile</li>
                         <li class="incomplete">Complete your first project</li>
                         <li class="incomplete">Invite your Friends</li>
                     </ul>
