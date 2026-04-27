@@ -28,68 +28,109 @@
             content="http://127.0.0.1:5500/HTML/index.html"
         />
         <title>Marcelo Vinícius Portfolio</title>
+
+        <link rel="stylesheet" href="/02-1-personal-portifolio/CSS/index.css" />
     </head>
 
     <body>
-        <nav>
-            <img
-                id="logo-profile"
-                src="https://github.com/marvini-louz.png"
-                alt="Profile Image"
-                width="90px"
-                height="90px"
-            />
-            <h2>Marcelo Vinícius</h2>
-            <ul style="list-style: none" id="nav-links">
-                <li><a href="../HTML/home.html">Home</a></li>
-                <li><a href="../HTML/projects.html">Projects</a></li>
-                <li><a href="../HTML/articles.html">Articles</a></li>
-                <li><a href="../HTML/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <section id="hero">
-                <div class="subheading">
-                    <h1>Frontend Developer</h1>
-                    <p>HTML only with proper layout, no styling.</p>
-                </div>
-            </section>
-
-            <section id="projects">
-                <ul>
-                    <li><a href="#">HTML Only Portifolio</a></li>
-                    <li><a href="#">Calculator</a></li>
-                    <li><a href="#">Quiz App</a></li>
-                    <li><a href="#">Countdown Timer</a></li>
-                    <li><a href="#">Product Upcoming Page</a></li>
+        <header class="flex navigate-menu">
+            <div class="flex name-logo">
+                <img
+                    class="logo-profile"
+                    id="logo-profile"
+                    src="https://github.com/marvini-louz.png"
+                    alt="Profile Image"
+                />
+                <h2>Marcelo Vinícius</h2>
+            </div>
+            <nav>
+                <ul class="flex menu-superior">
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/projects.html"
+                            >Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/articles.html"
+                            >Articles</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/contact.html"
+                            >Contact</a
+                        >
+                    </li>
                 </ul>
-            </section>
+            </nav>
+        </header>
+        <div class="flex hero">
+            <div class="flex col subheading">
+                <h1>Frontend Developer</h1>
+                <p>HTML and CSS stylized.</p>
+            </div>
+        </div>
 
-            <section id="works-exp">
-                <div><h3>Work Experience</h3></div>
-                <p>roadmap.sh</p>
-                <p>Solved all the frontend projecs</p>
-                <a
-                    href="https://roadmap.sh/u/marvinilouz"
-                    target="_blank"
-                    id="site-profile"
-                    >Visit My Profile</a
-                >
-                <div><h3>OpenSource Work</h3></div>
-                <p>
-                    Contributedto 50 opensource projects. Made myown projects
-                    with some GitHub stars.
-                </p>
-                <a
-                    href="https://github.com/marvini-louz"
-                    target="_blank"
-                    id="github-profile"
-                    >Visit my GitHub Profile</a
-                >
-            </section>
+        <main class="flex">
+            <div class="flex col projects">
+                <p>My Projects</p>
+                <ul class="flex col">
+                    <li>
+                        <a
+                            href="https://github.com/marvini-louz/gerador_qr_code"
+                            target="_blank"
+                            >👉 QR Code Generator</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/marvini-louz/insaninho_bot"
+                            target="_blank"
+                            >👉 Discord Bot</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/marvini-louz/my-roadmap-projects"
+                            target="_blank"
+                            >👉 My Roadmap.sh Projects</a
+                        >
+                    </li>
+                </ul>
+            </div>
 
-            <section id="education">
+            <div class="flex col works-exp">
+                <div>
+                    <h3>Work Experience</h3>
+                    <p>roadmap.sh</p>
+                    <p>Solving all the projects</p>
+                    <a
+                        href="https://roadmap.sh/u/marvinilouz"
+                        target="_blank"
+                        id="site-profile"
+                        >👉 Visit My Profile</a
+                    >
+                </div>
+                <div>
+                    <h3>OpenSource Work</h3>
+                    <p>
+                        Contributedto 50 opensource projects. Made myown
+                        projects with some GitHub stars.
+                    </p>
+                    <a
+                        href="https://github.com/marvini-louz"
+                        target="_blank"
+                        id="github-profile"
+                        >👉 Visit my GitHub Profile</a
+                    >
+                </div>
+            </div>
+
+            <div class="education">
                 <div>
                     <h3>Education</h3>
                 </div>
@@ -105,37 +146,37 @@
                     <li>Javascript</li>
                     <li>Python</li>
                 </ul>
-            </section>
-
-            <section id="reviews-teachers">
-                <div class="subheading-title">
-                    <h3>Review from my Teachers</h3>
-                </div>
-                <div class="teachers">
-                    <div class="teacher">
-                        <p>
-                            Marcelo Vinícius was a brilliant student;always
-                            stood out with his assignments.
-                        </p>
-                        <h5>Jonh Doe - Assistant Professor</h5>
-                    </div>
-                    <div class="teacher">
-                        <p>
-                            Marcelo Vinícius was a brilliant student;always
-                            stood out with his assignments.
-                        </p>
-                        <h5>Jonh Doe - Assistant Professor</h5>
-                    </div>
-                    <div class="teacher">
-                        <p>
-                            Marcelo Vinícius was a brilliant student;always
-                            stood out with his assignments.
-                        </p>
-                        <h5>Jonh Doe - Assistant Professor</h5>
-                    </div>
-                </div>
-            </section>
+            </div>
         </main>
+
+        <section id="reviews-teachers">
+            <div class="subheading-title">
+                <h3>Review from my Teachers</h3>
+            </div>
+            <div class="teachers">
+                <div class="teacher">
+                    <p>
+                        Marcelo Vinícius was a brilliant student;always stood
+                        out with his assignments.
+                    </p>
+                    <h5>Jonh Doe - Assistant Professor</h5>
+                </div>
+                <div class="teacher">
+                    <p>
+                        Marcelo Vinícius was a brilliant student;always stood
+                        out with his assignments.
+                    </p>
+                    <h5>Jonh Doe - Assistant Professor</h5>
+                </div>
+                <div class="teacher">
+                    <p>
+                        Marcelo Vinícius was a brilliant student;always stood
+                        out with his assignments.
+                    </p>
+                    <h5>Jonh Doe - Assistant Professor</h5>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <p>all rights reserved 2026.</p>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,8 +11,18 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "cabin", sans-serif;
     line-height: 1.4;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        font-weight: 700;
+        color: purple;
+        transition: 0.3s;
+    }
 }
 
 .flex {
@@ -23,5 +35,99 @@ body {
         &.wrap {
             flex-flow: column nowrap;
         }
+    }
+}
+.navigate-menu {
+    padding: 1rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        border: solid black 1rem;
+    }
+
+    .name-logo {
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+        .logo-profile {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+        }
+    }
+
+    .menu-superior {
+        list-style: none;
+        gap: 3.12rem;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+        }
+    }
+}
+.hero {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+
+    .subheading {
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 3.98rem;
+        }
+        p {
+            font-size: 1.92rem;
+            color: lightslategray;
+        }
+    }
+}
+
+main {
+    align-items: start;
+    justify-content: space-around;
+    padding: 0 5rem;
+    gap: 2rem;
+
+    .projects,
+    .works-exp,
+    .education {
+        color: black;
+        font-size: 1.92rem;
+    }
+
+    .projects {
+        width: 40rem;
+        align-items: start;
+        justify-content: left;
+        gap: 1.6rem;
+
+        p {
+            font-size: 2.76rem;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style: none;
+            gap: 1rem;
+        }
+    }
+
+    .works-exp {
+        align-items: left;
+        justify-content: start;
+        gap: 1.6rem;
+    }
+
+    .education {
+        list-style-position: inside;
     }
 }
