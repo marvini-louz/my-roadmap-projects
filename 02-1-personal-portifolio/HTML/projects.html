@@ -28,66 +28,88 @@
             content="http://127.0.0.1:5500/HTML/index.html"
         />
         <title>Marcelo Vinícius Portfolio</title>
+
+        <link
+            rel="stylesheet"
+            href="/02-1-personal-portifolio/CSS/projects.css"
+        />
     </head>
 
     <body>
-        <nav>
-            <a href="/02-1-personal-portifolio/HTML/index.html">
-                <img
-                    id="logo-profile"
-                    src="https://github.com/marvini-louz.png"
-                    alt="Profile Image"
-                    width="90px"
-                    height="90px"
-                />
-            </a>
-            <h2>Marcelo Vinícius</h2>
-            <ul style="list-style: none" id="nav-links">
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/projects.html"
-                        >Projects</a
-                    >
-                </li>
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/articles.html"
-                        >Articles</a
-                    >
-                </li>
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/contact.html"
-                        >Contact</a
-                    >
-                </li>
-            </ul>
-        </nav>
+        <header class="flex navigate-menu">
+            <div class="flex name-logo">
+                <a href="/02-1-personal-portifolio/HTML/index.html"
+                    ><img
+                        class="logo-profile"
+                        id="logo-profile"
+                        src="https://github.com/marvini-louz.png"
+                        alt="Profile Image"
+                /></a>
+                <h2>Marcelo Vinícius</h2>
+            </div>
+            <nav>
+                <ul class="flex menu-superior">
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/projects.html"
+                            >Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/articles.html"
+                            >Articles</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/contact.html"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <main>
-            <section id="hero">
-                <div class="subheading">
+            <div class="flex hero">
+                <div class="flex col subheading">
                     <h1>Frontend Developer</h1>
-                    <p>HTML only with proper layout, no styling.</p>
+                    <p>HTML and CSS stylized.</p>
                 </div>
-            </section>
+            </div>
 
-            <section id="projects">
-                <div class="subheading">
-                    <h3>Projects</h3>
-                </div>
-                <div>
-                    <ul id="project-links">
-                        <li><a href="#">Single Page CV</a></li>
-                        <li><a href="#">HTML Only Portfolio</a></li>
-                        <li><a href="#">Calculator</a></li>
-                        <li><a href="#">Quiz App</a></li>
-                    </ul>
-                </div>
-            </section>
+            <div class="flex col projects">
+                <p>My Projects</p>
+                <ul class="flex col">
+                    <li>
+                        <a
+                            href="https://github.com/marvini-louz/gerador_qr_code"
+                            target="_blank"
+                            >👉 QR Code Generator</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/marvini-louz/insaninho_bot"
+                            target="_blank"
+                            >👉 Discord Bot</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/marvini-louz/my-roadmap-projects"
+                            target="_blank"
+                            >👉 My Roadmap.sh Projects</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </main>
 
-        <footer>
+        <footer class="flex">
             <p>all rights reserved 2026.</p>
         </footer>
     </body>

@@ -28,49 +28,58 @@
             content="http://127.0.0.1:5500/HTML/index.html"
         />
         <title>Marcelo Vinícius Portfolio</title>
+
+        <link
+            rel="stylesheet"
+            href="/02-1-personal-portifolio/CSS/articles.css"
+        />
     </head>
 
     <body>
-        <nav>
-            <a href="/02-1-personal-portifolio/HTML/index.html">
-                <img
-                    id="logo-profile"
-                    src="https://github.com/marvini-louz.png"
-                    alt="Profile Image"
-                    width="90px"
-                    height="90px"
-                />
-            </a>
-            <h2>Marcelo Vinícius</h2>
-            <ul style="list-style: none" id="nav-links">
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/projects.html"
-                        >Projects</a
-                    >
-                </li>
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/articles.html"
-                        >Articles</a
-                    >
-                </li>
-                <li>
-                    <a href="/02-1-personal-portifolio/HTML/contact.html"
-                        >Contact</a
-                    >
-                </li>
-            </ul>
-        </nav>
+        <header class="flex navigate-menu">
+            <div class="flex name-logo">
+                <a href="/02-1-personal-portifolio/HTML/index.html"
+                    ><img
+                        class="logo-profile"
+                        id="logo-profile"
+                        src="https://github.com/marvini-louz.png"
+                        alt="Profile Image"
+                /></a>
+                <h2>Marcelo Vinícius</h2>
+            </div>
+            <nav>
+                <ul class="flex menu-superior">
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/projects.html"
+                            >Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/articles.html"
+                            >Articles</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/02-1-personal-portifolio/HTML/contact.html"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <main>
-            <section id="hero">
-                <div class="subheading">
+            <div class="flex hero">
+                <div class="flex col subheading">
                     <h1>Frontend Developer</h1>
-                    <p>HTML only with proper layout, no styling.</p>
+                    <p>HTML and CSS stylized.</p>
                 </div>
-            </section>
+            </div>
 
             <section id="articles">
                 <div class="subheading">
@@ -87,7 +96,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="flex">
             <p>all rights reserved 2026.</p>
         </footer>
     </body>

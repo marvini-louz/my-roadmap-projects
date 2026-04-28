@@ -98,80 +98,9 @@ body {
     }
 }
 
-main {
-    border: solid black 0.1rem;
-    align-items: start;
-    justify-content: space-between;
-    padding: 2rem 5rem;
-
-    .projects,
-    .works-exp,
-    .education {
-        color: black;
-        font-size: 1.92rem;
-    }
-
-    .projects {
-        width: 40rem;
-        padding: 1rem;
-        align-items: start;
-        justify-content: left;
-        gap: 1.6rem;
-
-        p {
-            font-size: 2.76rem;
-            font-weight: 700;
-        }
-
-        ul {
-            list-style: none;
-            gap: 1rem;
-        }
-    }
-
-    .works-exp {
-        width: 70rem;
-        padding: 1rem;
-        align-items: left;
-        justify-content: start;
-        gap: 1.6rem;
-    }
-
-    .education {
-        list-style-position: inside;
-        gap: 1rem;
-    }
-}
-
-.reviews-teachers {
-    align-items: center;
-    padding: 2rem 5rem;
-    gap: 2rem;
-
-    h3 {
-        font-size: 2.76rem;
-    }
-
-    .teachers {
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-
-        .teacher {
-            font-size: 1.92rem;
-            color: black;
-        }
-    }
-}
-
 footer {
     padding: 5rem;
     align-items: center;
     justify-content: center;
     font-size: 1.92rem;
 }
-
-/* @media (max-width: 768px){
-
-} */
