@@ -81,20 +81,31 @@
                 </div>
             </div>
 
-            <section id="contact">
-                <div class="subheading">
+            <section class="flex col contact">
+                <div class="flex col subheading">
                     <h3>Contact</h3>
-                </div>
-                <div>
                     <p>
                         If you have any questions, please email me at:
-                        contato@sigmit.com.br
+                        <a href="mailto:contato@sigmit.com.br"
+                            >contato@sigmit.com.br</a
+                        >
                     </p>
+                </div>
+                <div>
                     <fieldset>
-                        <form action="/my-handling-form-page" method="get">
+                        <form
+                            class="flex col"
+                            action="/my-handling-form-page"
+                            method="get"
+                        >
                             <p>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="user_name" />
+                                <label for="name">Full Name:</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="user_name"
+                                    placeholder="How can we call you"
+                                />
                             </p>
                             <p>
                                 <label for="mail">Email:</label>
@@ -102,6 +113,7 @@
                                     type="email"
                                     id="mail"
                                     name="user_email"
+                                    placeholder="youremail@domain.com"
                                 />
                             </p>
                             <p>
@@ -109,6 +121,7 @@
                                 <textarea
                                     id="msg"
                                     name="user_message"
+                                    placeholder="How can we help you today?"
                                 ></textarea>
                             </p>
                             <p class="button">
