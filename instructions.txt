@@ -6,11 +6,3 @@ Fontes - Minor Third - 1200 em px
 Espaçamentos - Major Third - 1250 em px
 2.1 2.7 3.3 4.2 5.2 6.5 8.2 10.2 12.8 16 20 25 31.2 39 48.8 61 76.3 95.4 119.2
 
-<p align="left">
-  <a href='/Frontend Projects/01-single-page-cv/'>
-    <img width="48%" src="./assets/images/single-page-cv.png" alt="single page cv" />
-  </a>
-  <a href='/Frontend Projects/02-basic-html-website/'>
-    <img width="48%" src="./assets/images/basic-html-website.png" alt="basic html website" />
-  </a>
-</p>
